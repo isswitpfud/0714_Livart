@@ -1,0 +1,41 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+   box-sizing: border-box;
+}
+div#wrap{
+    margin: 0 auto;
+}
+
+a:link{
+    color:#333;
+}
+a:hover{
+    color:#333;
+}
+a:visited{
+    color:#444;
+}
+a:active{
+    color:#555;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.flexContainer{
+    display: flex;
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}

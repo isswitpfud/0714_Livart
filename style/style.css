@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+div#wrap {
+  width: 1160px;
+  height: 775px;
+}
+
+#header {
+  width: 1160px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+#header > h1 {
+  border-bottom: 1px solid #000;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+nav#maingnb {
+  height: 60px;
+  line-height: 60px;
+}
+
+nav#maingnb ul#mainMenu {
+  justify-content: center;
+}
+nav#maingnb ul#mainMenu li {
+  color: #555;
+}
+
+nav#maingnb li > a:hover {
+  font-weight: bold;
+}
+
+nav#maingnb li:nth-child(2n) {
+  width: 40px;
+  text-align: center;
+  color: #888;
+}
+
+/* div#main 시작*/
+#main {
+  width: 1160px;
+  height: 600px;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+#main #mainLeft {
+  width: 390px;
+  height: 600px;
+}
+
+#main > #mainRight {
+  width: 650px !important;
+  height: 600px;
+  padding: 0 6px;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  /* --> 부모요소에 딱 들어가게 크기를 정렬함 */
+}
+
+#main #mainRight img {
+  width: 220px;
+  height: 220px;
+
+  margin: 10px 0 4px;
+}
+
+#main #mainRight div.goods p {
+  font-size: 12px;
+  text-align: center;
+}
+
+#main #mainRight > .goods {
+  text-align: center;
+}
+
+#main #mainRight > .goods:nth-child(1),
+#main #mainRight > .goods:nth-child(4) {
+  padding-left: 70px;
+}
+
+#main #mainRight > .goods > p > span {
+  color: #947155;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#main #mainRight > .goods > h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f968f;
+  display: inline-block;
+}
+
+#main #mainRight .goods > p.price > h3::after {
+  content: "원";
+  font-size: 20px;
+  color: #0f968f;
+}
+
+/* div#main 끝 */
+
+/* div#layerPopup */
+div#layerPopup {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+
+  position: fixed;
+  overflow: auto;
+}
+
+div#popupContents {
+}
